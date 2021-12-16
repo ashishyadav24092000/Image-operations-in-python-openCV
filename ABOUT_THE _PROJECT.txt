@@ -1,0 +1,27 @@
+ABOUT METHODS OF LIBRARIES ::
+
+1. CV2.LINE
+cv::LineTypes {
+  cv::FILLED = -1,
+  cv::LINE_4 = 4,
+  cv::LINE_8 = 8,
+  cv::LINE_AA = 16
+}
+
+2.
+cv2.line(img,(0,0),(255,255),(0,0,255),5) <=>(image,start coordinate,end coordinate,color_of_line,thickness_scale)
+
+3.
+cv2.rectangle(img,(384,0),(510,120),(0,0,255),5) <-->(image,top_leftmost_corner_coordinate,right_bottom_most_coordinate)
+
+4.
+cv2.circle(img,(447,63),63,(0,255,0),-1) <---> (image,center_coordinates,radius,color,thickness)
+
+5.
+cv2.putText(img,'Opencv',(10,500),font,4,(255,255,255),10,cv2.LINE_AA)
+                                 <------------>
+(image,text,bottomleftCornerofthetext,font,size_of_font,color_of_text,thickness,type_of_line)
+                                 
+Note : cv2.putText ---> cv2.putText() method is used to draw a text string on any image.
+
+Syntax: cv2.putText(image, text, org, font, fontScale, color[, thickness[, lineType[, bottomLeftOrigin]]])
